@@ -9,6 +9,7 @@ sleep(0.5); print("PART OF VOID STUDIOS UTILITY SET")
 sleep(0.5); print("COPYRIGHT VOID STUDIOS 2026")
 sleep(0.5); print("GNU General Public License 2.x")
 sleep(0.5); print("CLICK E TO EXIT, S TO LIST")
+sleep(0.5); print("TYPE H FOR HELP")
 
 home = os.path.expanduser("~")
 
@@ -37,6 +38,10 @@ while True:
 		for s, p in files[:20]:
 			sleep(1); print(round(s/1024**3, 2), "GB", p) #adjust the sleep time, files will either appear faster or slower
 			
-	if choice not in ["E", "S"]:
+	if choice == "H":
+		sleep(0.5); print("To change how many files it lists at once, look for line 'for s, p in files[:<>]:' and change the number to your desired amount [it will list files in that amount]. Please contact voiddevr@protonmail.com for reporting issues or general help. I will assist the best of my abilities.")		
+			
+	if choice not in ["E", "S", "H"]:
 		print("INVALID.\n")
 		continue
+		
