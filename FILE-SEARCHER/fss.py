@@ -15,7 +15,7 @@ home = os.path.expanduser("~")
 files = []
 
 while True:
-	choice = input("CHOICE: ")
+	choice = input("CHOICE: ").upper()
 	
 	if choice == "E":
 		sleep(0.5); print("Goodbye:")
